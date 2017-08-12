@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a class="main-header-logo" href="index.html">
+                <img src="" width="" height="" alt="Логотип Nerds 1">
+            </a>
+            <ul class="site-navigation">
+                <li><a href="">Студия</a></li>
+                <li><a href="">Клиенты</a></li>
+                <li class="site-navigation-current"><a href="">Магазин</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+            <ul class="user-navigation">
+                <li><a href="">Корзина</a></li>
+            </ul>
+        </nav>
+    </header>
+      
+    <main class="container">
+        <h1>Магазин готовых шаблонов</h1>
+        
+        <section class="filters">
+            <h2 class="visually-hidden">Фильтр шаблонов</h2>
+            <form action="" method="get" class="filter">
+                <fieldset>
+                    <legend>СТОИМОСТЬ:</legend>
+                    <div>
+                        <input type="range" min="0" max="20000" name="cost" id="cost-value">
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>СЕТКА:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input class="filter-input filter-input-radio" type="radio" name="net" value="adaptive" checked>
+                            Адаптивная
+                        </li>
+                        <li class="filter-option">
+                            <input class="filter-input filter-input-radio" type="radio" name="net" value="fixed">
+                            Фиксированная
+                        </li>
+                        <li class="filter-option">
+                            <input class="filter-input filter-input-radio" type="radio" name="net" value="rubber">
+                            Резиновая
+                        </li>
+                    </ul>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>ОСОБЕННОСТИ:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
+                            Слайдер
+                        </li>
+                        <li class="filter-option">
+                            <input class="filter-input filter-input-checkbox" type="checkbox" name="block-of-advantages">
+                            Блок преимуществ
+                        </li>
+                        <li class="filter-option">
+                            <input class="filter-input filter-input-checkbox" type="checkbox" name="news" checked>
+                            Новости
+                        </li>
+                        <li class="filter-option">
+                            <input class="filter-input filter-input-checkbox" type="checkbox" name="gallery">
+                            Галлерея
+                        </li>
+                        <li class="filter-option">
+                            <input class="filter-input filter-input-checkbox" type="checkbox" name="basket">
+                            Корзина
+                        </li>
+                    </ul>
+                </fieldset>
+                
+                <button type="submit" class="filter-button">ПОКАЗАТЬ</button>
+            </form>
+        </section>
+        
+        <section class="catalog">
+            <h2 class="visually-hidden">Каталог шаблонов</h2>
+            <p><b>СОРТИРОВАТЬ:</b></p>
+            <ul class="sorting">
+                <li class="sorting-current"><a href="">ПО ЦЕНЕ</a></li>
+                <li><a href="">ПО ТИПУ</a></li>
+                <li><a href="">ПО НАЗВАНИЮ</a></li>
+            </ul>
+            <ul class="catalog-list">
+                <li class="catolog-item">
+                    <h3><a href="">SEDONA</a></h3>
+                    <p>Информационный сайт для туристов</p>
+                    <a href="">
+                        <img src="" width="" height="" alt="Sedona">
+                    </a>
+                    <a class="button" href=""><b>9 900 РУБ.</b></a>
+                </li>
+                <li class="catolog-item">
+                    <h3><a href="">PINK</a></h3>
+                    <p></p>
+                    <a href="">
+                        <img src="" width="" height="" alt="Pink">
+                    </a>
+                    <a class="button" href=""><b></b></a>
+                </li>
+                <li class="catolog-item">
+                    <h3><a href="">BORODINSKI</a></h3>
+                    <p></p>
+                    <a href="">
+                        <img src="" width="" height="" alt="Borodinski">
+                    </a>
+                    <a class="button" href=""><b></b></a>
+                </li>
+                <li class="catolog-item">
+                    <h3><a href="">MISHKA</a></h3>
+                    <p></p>
+                    <a href="">
+                        <img src="" width="" height="" alt="Mishka">
+                    </a>
+                    <a class="button" href=""><b></b></a>
+                </li>
+                <li class="catolog-item">
+                    <h3><a href="">A+</a></h3>
+                    <p></p>
+                    <a href="">
+                        <img src="" width="" height="" alt="A+">
+                    </a>
+                    <a class="button" href=""><b></b></a>
+                </li>
+                <li class="catolog-item">
+                    <h3><a href="">КВАСТ</a></h3>
+                    <p></p>
+                    <a href="">
+                        <img src="" width="" height="" alt="Kvast">
+                    </a>
+                    <a class="button" href=""><b></b></a>
+                </li>
+            </ul>
+            <ul class="pagination-list">
+                <li class="pagination-item pagination-item-current"><a>1</a></li>
+                <li class="pagination-item"><a href="">2</a></li>
+                <li class="pagination-item"><a href="">3</a></li>
+                <li class="pagination-item"><a href="">СЛЕДУЮЩАЯ</a></li>
+            </ul>    
+        </section>
+        
+    </main>
+      
+    <footer class="main-footer">
+        <div class="footer-social">
+            <ul>
+                <li><a class="social-button" href="">Вконтакте</a></li>
+                <li><a class="social-button" href="">Фейсбук</a></li>
+                <li><a class="social-button" href="">Инстаграм</a></li>
+            </ul>
+        </div>
+        <p><b>Давайте дружить, это выгодно!</b></p>
+        <p>Скидка 10% для друзей из социальных сетей</p>
+    </footer>  
+
+</body>
+</html>
