@@ -8,17 +8,15 @@
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo" href="index.html">
-                <img src="" width="" height="" alt="Логотип Nerds 1">
+                <img src="#" width="" height="" alt="Логотип Nerds 1">
             </a>
             <ul class="site-navigation">
-                <li><a href="">Студия</a></li>
-                <li><a href="">Клиенты</a></li>
-                <li class="site-navigation-current"><a href="">Магазин</a></li>
-                <li><a href="">Контакты</a></li>
+                <li><a href="#">Студия</a></li>
+                <li><a href="#">Клиенты</a></li>
+                <li class="site-navigation-current"><a href="#">Магазин</a></li>
+                <li><a href="#">Контакты</a></li>
             </ul>
-            <ul class="user-navigation">
-                <li><a href="">Корзина</a></li>
-            </ul>
+            <a href="#" class="site-navigation-basket">Корзина</a>
         </nav>
     </header>
       
@@ -29,139 +27,145 @@
             <h2 class="visually-hidden">Фильтр шаблонов</h2>
             <form action="" method="get" class="filter">
                 <fieldset>
-                    <legend>СТОИМОСТЬ:</legend>
+                    <legend>Стоимость:</legend>
                     <div>
+                        <label for="cost-value"></label>
                         <input type="range" min="0" max="20000" name="cost" id="cost-value">
                     </div>
                 </fieldset>
                 
                 <fieldset>
-                    <legend>СЕТКА:</legend>
+                    <legend>Сетка:</legend>
                     <ul>
                         <li class="filter-option">
-                            <input class="filter-input filter-input-radio" type="radio" name="net" value="adaptive" checked>
-                            Адаптивная
+                            <label for="filter-adaptive">Адаптивная</label>
+                            <input class="filter-input filter-input-radio" type="radio" name="net" value="adaptive" id="filter-adaptive" checked>
                         </li>
                         <li class="filter-option">
-                            <input class="filter-input filter-input-radio" type="radio" name="net" value="fixed">
-                            Фиксированная
+                            <label for="filter-fixed">Фиксированная</label>
+                            <input class="filter-input filter-input-radio" type="radio" name="net" value="fixed" id="filter-fixed">
                         </li>
                         <li class="filter-option">
-                            <input class="filter-input filter-input-radio" type="radio" name="net" value="rubber">
-                            Резиновая
+                            <label for="filter-fixed">Резиновая</label>
+                            <input class="filter-input filter-input-radio" type="radio" name="net" value="rubber" id="filter-rubber">
                         </li>
                     </ul>
                 </fieldset>
                 
                 <fieldset>
-                    <legend>ОСОБЕННОСТИ:</legend>
+                    <legend>Особенности:</legend>
                     <ul>
                         <li class="filter-option">
-                            <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
-                            Слайдер
+                            <label for="filter-slider">Слайдер</label>
+                            <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
                         </li>
                         <li class="filter-option">
-                            <input class="filter-input filter-input-checkbox" type="checkbox" name="block-of-advantages">
-                            Блок преимуществ
+                            <label for="filter-advantages">Блок преимуществ</label>
+                            <input class="filter-input filter-input-checkbox" type="checkbox" name="block-of-advantages" id="filter-advantages">
                         </li>
                         <li class="filter-option">
-                            <input class="filter-input filter-input-checkbox" type="checkbox" name="news" checked>
-                            Новости
+                            <label for="filter-news">Новости</label>
+                            <input class="filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
                         </li>
                         <li class="filter-option">
-                            <input class="filter-input filter-input-checkbox" type="checkbox" name="gallery">
-                            Галлерея
+                            <label for="filter-gallery">Галлерея</label>
+                            <input class="filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
                         </li>
                         <li class="filter-option">
-                            <input class="filter-input filter-input-checkbox" type="checkbox" name="basket">
-                            Корзина
+                            <label for="filter-basket">Корзина</label>
+                            <input class="filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
                         </li>
                     </ul>
                 </fieldset>
                 
-                <button type="submit" class="filter-button">ПОКАЗАТЬ</button>
+                <button type="submit" class="filter-button">Показать</button>
             </form>
         </section>
         
         <section class="catalog">
             <h2 class="visually-hidden">Каталог шаблонов</h2>
-            <p><b>СОРТИРОВАТЬ:</b></p>
-            <ul class="sorting">
-                <li class="sorting-current"><a href="">ПО ЦЕНЕ</a></li>
-                <li><a href="">ПО ТИПУ</a></li>
-                <li><a href="">ПО НАЗВАНИЮ</a></li>
-            </ul>
+            <div class="sorting">
+                <p>Сортировать:</p>
+                <ul>
+                    <li class="sorting-current"><a href="#">По цене</a></li>
+                    <li><a href="#">По типу</a></li>
+                    <li><a href="#">По названию</a></li>
+                </ul>
+            </div>
             <ul class="catalog-list">
                 <li class="catolog-item">
-                    <h3><a href="">SEDONA</a></h3>
-                    <p>Информационный сайт для туристов</p>
-                    <a href="">
-                        <img src="" width="" height="" alt="Sedona">
-                    </a>
-                    <a class="button" href=""><b>9 900 РУБ.</b></a>
+                    <figure>
+                        <h3><a href="#">Sedona</a></h3>
+                        <p>Информационный сайт для туристов</p>
+                        <a class="button" href="#">9 900 РУБ.</a>
+                    </figure>
+                    <p><img src="#" width="" height="" alt="Sedona"></p>
                 </li>
                 <li class="catolog-item">
-                    <h3><a href="">PINK</a></h3>
-                    <p></p>
-                    <a href="">
-                        <img src="" width="" height="" alt="Pink">
-                    </a>
-                    <a class="button" href=""><b></b></a>
+                    <figure>
+                        <h3><a href="#">Pink</a></h3>
+                        <p></p>
+                        <a class="button" href="#"></a>
+                    </figure>
+                    <p><img src="#" width="" height="" alt="Pink"></p>
                 </li>
                 <li class="catolog-item">
-                    <h3><a href="">BORODINSKI</a></h3>
-                    <p></p>
-                    <a href="">
-                        <img src="" width="" height="" alt="Borodinski">
-                    </a>
-                    <a class="button" href=""><b></b></a>
+                    <figure>
+                        <h3><a href="#">Borodinski</a></h3>
+                        <p></p>
+                        <a class="button" href="#"></a>
+                    </figure>
+                    <p><img src="#" width="" height="" alt="Borodinski"></p>
                 </li>
                 <li class="catolog-item">
-                    <h3><a href="">MISHKA</a></h3>
-                    <p></p>
-                    <a href="">
-                        <img src="" width="" height="" alt="Mishka">
-                    </a>
-                    <a class="button" href=""><b></b></a>
+                    <figure>
+                        <h3><a href="#">Mishka</a></h3>
+                        <p></p>
+                        <a class="button" href="#"></a>
+                    </figure>
+                    <p><img src="#" width="" height="" alt="Mishka"></p>
                 </li>
                 <li class="catolog-item">
-                    <h3><a href="">A+</a></h3>
-                    <p></p>
-                    <a href="">
-                        <img src="" width="" height="" alt="A+">
-                    </a>
-                    <a class="button" href=""><b></b></a>
+                    <figure>
+                        <h3><a href="#">A+</a></h3>
+                        <p></p>
+                        <a class="button" href="#"></a>
+                    </figure>
+                    <p><img src="#" width="" height="" alt="A+"></p>
                 </li>
                 <li class="catolog-item">
-                    <h3><a href="">КВАСТ</a></h3>
-                    <p></p>
-                    <a href="">
-                        <img src="" width="" height="" alt="Kvast">
-                    </a>
-                    <a class="button" href=""><b></b></a>
+                    <figure>
+                        <h3><a href="#">Кваст</a></h3>
+                        <p></p>
+                        <a class="button" href="#"></a>
+                    </figure>
+                    <p><img src="#" width="" height="" alt="Kvast"></p>
                 </li>
             </ul>
             <ul class="pagination-list">
                 <li class="pagination-item pagination-item-current"><a>1</a></li>
-                <li class="pagination-item"><a href="">2</a></li>
-                <li class="pagination-item"><a href="">3</a></li>
-                <li class="pagination-item"><a href="">СЛЕДУЮЩАЯ</a></li>
+                <li class="pagination-item"><a href="#">2</a></li>
+                <li class="pagination-item"><a href="#">3</a></li>
+                <li class="pagination-item"><a href="#">Следующая</a></li>
             </ul>    
         </section>
         
     </main>
       
     <footer class="main-footer">
-        <div class="footer-social">
-            <ul>
-                <li><a class="social-button" href="">Вконтакте</a></li>
-                <li><a class="social-button" href="">Фейсбук</a></li>
-                <li><a class="social-button" href="">Инстаграм</a></li>
-            </ul>
-        </div>
-        <p><b>Давайте дружить, это выгодно!</b></p>
-        <p>Скидка 10% для друзей из социальных сетей</p>
-    </footer>  
-
-</body>
+            <div class="footer-map">
+            </div>
+            <div class="footer-social">
+                <ul>
+                    <li><a class="social-button" href="#">Вконтакте</a></li>
+                    <li><a class="social-button" href="#">Фейсбук</a></li>
+                    <li><a class="social-button" href="#">Инстаграм</a></li>
+                </ul>
+            </div>
+            <p><b>Давайте дружить, это выгодно!</b><br>
+                  Скидка 10% для друзей из социальных сетей
+            </p>
+        </footer> 
+      
+  </body>
 </html>
