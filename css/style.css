@@ -1,0 +1,16 @@
+body {
+    font-size: 16pt;
+    font-family: Roboto, serif;
+}
+
+.container .container-heading {
+    font-size: 55pt;
+    font-family: Roboto, serif;
+}
+
+.container .catalog .item-title {
+    font-size: 18pt;
+    font-weight: bold;
+    font-family: Roboto, serif;
+    text-transform: uppercase;
+}
