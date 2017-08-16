@@ -1,16 +1,18 @@
 body {
-    font-size: 16pt;
-    font-family: Roboto, serif;
+    font-size: 16px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    line-height: 24px;
 }
 
-.container .container-heading {
-    font-size: 55pt;
-    font-family: Roboto, serif;
+.container-heading {
+    font-size: 55px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 500;
 }
 
-.container .catalog .item-title {
-    font-size: 18pt;
+.item-title {
+    font-size: 18px;
     font-weight: bold;
-    font-family: Roboto, serif;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
     text-transform: uppercase;
 }
