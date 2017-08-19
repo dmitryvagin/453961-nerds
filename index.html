@@ -10,13 +10,13 @@
     
     <header class="main-header">
         <nav class="main-navigation">
-            <a class="main-header-logo">
+            <a class="main-header-logo" href="index.html">
                 <img src="img/SVG/nerds-logo.svg" width="160px" height="65px" alt="Логотип Nerds 1">
             </a>
             <ul class="site-navigation">
                 <li><a href="#">Студия</a></li>
                 <li><a href="#">Клиенты</a></li>
-                <li><a href="#">Магазин</a></li>
+                <li><a href="catalog.html">Магазин</a></li>
                 <li><a href="#">Контакты</a></li>
             </ul>
                 <a href="#" class="site-navigation-basket">Корзина</a>
@@ -26,10 +26,23 @@
       
     <main class="container">
         <h1 class="visually-hidden">Нёрдс: главная страница.</h1>
-        <section class="features">
+        <section class="features slide-1">
             <p>Долго, дорого, скурпулезно.</p>
             <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
             <a class="button" href="#">Узнать больше</a>
+            <img class="image-slide-1" src="img/PNG/slide1.png" width="760px" height="431px">
+        </section>
+        <section class="features slide-2 visually-hidden">
+            <p>Любим математику как никто другой</p>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a class="button" href="#">Узнать больше</a>
+            <img class="image-slide-2" src="img/PNG/slide2.png" width="760px" height="431px">
+        </section>
+        <section class="features slide-3 visually-hidden">
+            <p>Только ночь, только хардкор</p>
+            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a class="button" href="#">Узнать больше</a>
+            <img class="image-slide-2" src="img/PNG/slide3.png" width="760px" height="431px">
         </section>
         
         <section class="services">
@@ -120,9 +133,25 @@
                 <b class="contacts-studio">Nёrds design studio</b>
                 <p>191186, Санкт-Петербург,<br>ул. Б.Конюшенная, д.19/8</p>
                 <p>тел. +7(812)275-75-75</p>
-                <a class="button" href="#">Напишите нам</a>
+                <button class="write-us-btn">Напишите нам</button>
             </div>
         </div>
+        <section class="write-us visually-hidden">
+            <p>Напишите нам</p>
+            <form action="#" method="get">
+                <div class="half-width">
+                    <label for="your-name">Ваше имя:</label>
+                    <input type="text" id="your-name" name="name" placeholder="Представьтесь, пожалуйста">
+                </div>
+                <div class="half-width">
+                    <label for="your-mail">Ваш e-mail:</label>
+                    <input type="text" id="your-mail" name="mail" placeholder="Для отправки ответа">
+                </div>
+                <label for="letter-content">Текст письма:</label>
+                <textarea id="letter-content" placeholder="В свободной форме"></textarea>
+                <a class="button" href="#">Отправить</a>
+            </form>
+        </section>
         <ul class="footer-social">
             <li><a class="social-button" href="#">Вконтакте</a></li>
             <li><a class="social-button" href="#">Фейсбук</a></li>
