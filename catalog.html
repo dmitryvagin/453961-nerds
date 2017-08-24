@@ -3,12 +3,15 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
+    
 <body>
     <header class="main-header">
         <nav class="main-navigation">
-            <a class="main-header-logo">
+            <a class="main-header-logo" href="index.html">
                 <img src="img/SVG/nerds-logo.svg" width="160" height="65" alt="Логотип Nerds 1">
             </a>
             <ul class="site-navigation">
@@ -39,16 +42,16 @@
                     <legend>Сетка:</legend>
                     <ul>
                         <li class="filter-option">
-                            <label for="filter-adaptive">Адаптивная</label>
                             <input class="filter-input filter-input-radio" type="radio" name="net" value="adaptive" id="filter-adaptive" checked>
+                            <label class="filter-label" for="filter-adaptive">Адаптивная</label>
                         </li>
                         <li class="filter-option">
-                            <label for="filter-fixed">Фиксированная</label>
                             <input class="filter-input filter-input-radio" type="radio" name="net" value="fixed" id="filter-fixed">
+                            <label class="filter-label" for="filter-fixed">Фиксированная</label>
                         </li>
                         <li class="filter-option">
-                            <label for="filter-rubber">Резиновая</label>
                             <input class="filter-input filter-input-radio" type="radio" name="net" value="rubber" id="filter-rubber">
+                            <label class="filter-label" for="filter-rubber">Резиновая</label>
                         </li>
                     </ul>
                 </fieldset>
@@ -57,29 +60,29 @@
                     <legend>Особенности:</legend>
                     <ul>
                         <li class="filter-option">
-                            <label for="filter-slider">Слайдер</label>
                             <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                            <label class="filter-label" for="filter-slider">Слайдер</label>
                         </li>
                         <li class="filter-option">
-                            <label for="filter-advantages">Блок преимуществ</label>
                             <input class="filter-input filter-input-checkbox" type="checkbox" name="block-of-advantages" id="filter-advantages">
+                            <label class="filter-label" for="filter-advantages">Блок преимуществ</label>
                         </li>
                         <li class="filter-option">
-                            <label for="filter-news">Новости</label>
                             <input class="filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                            <label class="filter-label" for="filter-news">Новости</label>
                         </li>
                         <li class="filter-option">
-                            <label for="filter-gallery">Галлерея</label>
                             <input class="filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                            <label class="filter-label" for="filter-gallery">Галлерея</label>
                         </li>
                         <li class="filter-option">
-                            <label for="filter-basket">Корзина</label>
                             <input class="filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
+                            <label class="filter-label" for="filter-basket">Корзина</label>
                         </li>
                     </ul>
                 </fieldset>
                 
-                <button type="submit" class="filter-button">Показать</button>
+                <input class="filter-submit" type="submit" value="Показать">
             </form>
         </section>
         
@@ -156,9 +159,9 @@
     <footer class="main-footer">
         <div class="footer-map">
             <div class="contacts">
-                <b class="contacts-studio">Nёrds design studio</b>
-                <p>191186, Санкт-Петербург,<br>ул. Б.Конюшенная, д.19/8</p>
-                <p>тел. +7(812)275-75-75</p>
+                <p class="contacts-studio">Nёrds design studio</p>
+                <p class="contacts-adress">191186, Санкт-Петербург,<br>ул. Б.Конюшенная, д.19/8</p>
+                <p class="contacts-telephone">тел. +7(812)275-75-75</p>
                 <a class="write-us-btn" href="#">Напишите нам</a>
             </div>
         </div>
@@ -167,21 +170,36 @@
             <form action="#" method="get">
                 <div class="half-width">
                     <label for="user-name">Ваше имя:</label>
-                    <input type="text" id="user-name" name="name" placeholder="Представьтесь, пожалуйста">
+                    <input class="user-name" type="text" id="user-name" name="name" placeholder="Представьтесь, пожалуйста">
                 </div>
                 <div class="half-width">
                     <label for="user-mail">Ваш e-mail:</label>
-                    <input type="text" id="user-mail" name="mail" placeholder="Для отправки ответа">
+                    <input class="user-mail" type="text" id="user-mail" name="mail" placeholder="Для отправки ответа">
                 </div>
                 <label for="user-content">Текст письма:</label>
-                <textarea id="user-content" placeholder="В свободной форме"></textarea>
-                <input type="sumbit" name="submit-form" value="Отправить">
+                <textarea class="user-content" id="user-content" placeholder="В свободной форме"></textarea>
+                <input class="submit-button" type="submit" value="Отправить">
             </form>
         </section>
         <ul class="footer-social">
-            <li><a class="social-button" href="#">Вконтакте</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
+            <li>
+                <a class="social-button" href="#">
+                    Вконтакте
+                    <!--<img src="img/SVG/vk-icon.svg" alt="Вконтакте">-->
+                </a>
+            </li>
+            <li>
+                <a class="social-button" href="#">
+                    Фейсбук
+                    <!--<img src="img/SVG/fb-icon.svg" width="78" height="78" alt="Фейсбук">-->
+                </a>
+            </li>
+            <li>
+                <a class="social-button" href="#">
+                    Инстаграм
+                    <!--<img src="img/SVG/insta-icon.svg" width="78" height="78" alt="Инстаграм">-->
+                </a>
+            </li>
         </ul>
         <div class="footer-promo">
             <p class="promo-1">Давайте дружить, это выгодно!</p>
