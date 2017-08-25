@@ -11,7 +11,17 @@ body {
 
 a {
     text-decoration: none;
-    text-transform: uppercase;
+}
+
+.visually-hidden {
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height: 1px; 
+    width: 1px; 
+    margin: -1px; 
+    padding: 0; 
+    border: 0; 
 }
 
 /* СТИЛИЗАЦИЯ СТРАНИЦЫ INDEX */
@@ -30,6 +40,7 @@ a {
 .site-navigation-basket{
     font-weight: 500;
     line-height: 24px;
+    text-transform: uppercase;
     color: #000000;
 }
 
@@ -37,7 +48,7 @@ a {
     opacity: 0.8;
 }
 
-.main-header-logo:focus {
+.main-header-logo:active {
     opacity: 0.3;
 }
 
@@ -46,14 +57,14 @@ a {
     color: #fb565a;
 }
 
-.site-navigation a:focus,
-.site-navigation-basket:focus {
+.site-navigation a:active,
+.site-navigation-basket:active {
     color: rgba(0,0,0,0.3);
 }
 
 /* Стилизация слайдера */
 
-.features {
+.slider {
     background-color: #eeeeee;
 }
 
@@ -68,6 +79,7 @@ a {
     font-size: 16px;
     font-weight: 500;
     line-height: 18px;
+    text-transform: uppercase;
     color: #ffffff;
     background-color: #fb565a;
 }
@@ -76,7 +88,7 @@ a {
     background-color: #e74246;
 }
 
-.slide-button:focus {
+.slide-button:active {
     background-color: #d7373b;
     color: rgba(255,255,255,0.3);
     box-shadow: inset 0 3px 0 0 rgba(0,1,1,0.1);
@@ -100,6 +112,7 @@ a {
     line-height: 18px;
     font-weight: 500;
     color: #ffffff;
+    text-transform: uppercase;
     background-color: #fb565a;
 }
 
@@ -107,6 +120,7 @@ a {
     line-height: 18px;
     font-weight: 500;
     color: #ffffff;
+    text-transform: uppercase;
     background-color: #00ca74;
 }
 
@@ -114,6 +128,7 @@ a {
     line-height: 18px;
     font-weight: 500;
     color: #ffffff;
+    text-transform: uppercase;
     background-color: #efc84a;
 }
 
@@ -129,19 +144,19 @@ a {
     background-color: #eab534;
 }
 
-.button-red:focus {
+.button-red:active {
     background-color: #d7373b;
     color: rgba(255,255,255,0.3);
     box-shadow: inset 0 3px 0 0 rgba(0,1,1,0.1);
 }
 
-.button-green:focus {
+.button-green:active {
     background-color: #00aa62;
     color: rgba(255,255,255,0.3);
     box-shadow: inset 0 3px 0 0 rgba(0,1,1,0.1);
 }
 
-.button-yellow:focus {
+.button-yellow:active {
     background-color: #e5a722;
     color: rgba(255,255,255,0.3);
     box-shadow: inset 0 3px 0 0 rgba(0,1,1,0.1);
@@ -156,13 +171,8 @@ a {
     color: #000000;
 }
 
-.about p:last-of-type {
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #000000;
-}
-
-.stats p {
+.about h3,
+.stats h3 {
     font-weight: 700;
     text-transform: uppercase;
     color: #000000;
@@ -193,7 +203,7 @@ a {
     opacity: 1;
 }
 
-.clients-list a:focus {
+.clients-list a:active {
     opacity: 0.1;
 }
 
@@ -216,6 +226,7 @@ a {
 .write-us-btn {
     line-height: 18px;
     color: #ffffff;
+    text-transform: uppercase;
     background-color: #fb565a;
 }
 
@@ -223,7 +234,7 @@ a {
     background-color: #e74246;
 }
 
-.write-us-btn:focus {
+.write-us-btn:active {
     background-color: #d7373b;
     color: rgba(255,255,255,0.3);
     box-shadow: inset 0 3px 0 0 rgba(0,1,1,0.1);
@@ -251,6 +262,13 @@ a {
     outline: none;
 }
 
+.user-name::-webkit-input-placeholder,
+.user-mail::-webkit-input-placeholder,
+.user-content::-webkit-input-placeholder {
+    line-height: 18px;
+    color: rgba(68,68,68,0.5);
+}
+
 .user-name:hover,
 .user-mail:hover,
 .user-content:hover {
@@ -261,6 +279,12 @@ a {
 .user-mail:focus,
 .user-content:focus {
     border: 2px solid #000000;
+}
+
+.user-name:focus::-webkit-input-placeholder,
+.user-mail:focus::-webkit-input-placeholder,
+.user-content:focus::-webkit-input-placeholder {
+    color: #444444;
 }
 
 .user-name:invalid,
@@ -280,7 +304,7 @@ a {
     background-color: #e74246;
 }
 
-.submit-button:focus {
+.submit-button:active {
     background-color: #d7373b;
     color: rgba(255,255,255,0.3);
     box-shadow: inset 0 3px 0 0 rgba(0,1,1,0.1);
@@ -309,6 +333,7 @@ a {
 
 .site-navigation-current {
     text-decoration: underline;
+    text-decoration-color: #fb565a;
 }
 
 .container-heading {
@@ -362,7 +387,7 @@ a {
     background-color: #dfdfdf;
 }
 
-.filter-submit:focus {
+.filter-submit:active {
     color: rgba(0,0,0,0.3);
     background-color: #d5d5d5;
     box-shadow: inset 0 3px 0 0 rgba(0,1,1,0.1);
@@ -384,6 +409,7 @@ a {
 .sorting-item a {
     font-size: 14px;
     line-height: 18px;
+    text-transform: uppercase;
     color: rgba(0,0,0,0.3);
 }
 
@@ -391,7 +417,7 @@ a {
     color: rgba(0,0,0,0.6);
 }
 
-.sorting-item a:focus {
+.sorting-item a:active {
     color: #000000;
 }
 
@@ -403,6 +429,24 @@ a {
 
 .catalog-list {
     list-style: none;
+}
+
+.item-shape {
+    width: 360px;
+    height: 576px;
+    background-image: url(sedona.jpg);
+    background-repeat: no-repeat;
+}
+
+.item-info {
+    top: 345px;
+    height: 231px;
+    background-color: #eeeeee;
+    display: none;
+}
+
+.item-shape:hover .item-info{
+    display: block;
 }
 
 .item-title {
@@ -422,6 +466,7 @@ a {
 .item-button {
     font-weight: 500;
     line-height: 18px;
+    text-transform: uppercase;
     color: #ffffff;
     background-color: #fb565a;
 }
@@ -430,10 +475,11 @@ a {
     background-color: #e74246;
 }
 
-.item-button:focus {
+.item-button:active {
     background-color: #d7373b;
     box-shadow: inset 0 3px 0 0 rgba(0,1,1,0.1);
 }
+
 
 /* Стилизация переключателя страниц */
 
@@ -444,6 +490,7 @@ a {
 .pagination-item a {
     font-weight: 500;
     line-height: 18px;
+    text-transform: uppercase;
     color: #000000;
     background-color: #eeeeee;
 }
@@ -457,7 +504,7 @@ a {
     background-color: #dfdfdf;
 }
 
-.pagination-item a:focus {
+.pagination-item a:active {
     box-shadow: inset 0 3px 0 0 rgba(0,1,1,0.1);
     color: rgba(0,0,0,0.3);
     background-color: #d5d5d5;
