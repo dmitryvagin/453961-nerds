@@ -509,3 +509,13 @@ a {
     color: rgba(0,0,0,0.3);
     background-color: #d5d5d5;
 }
+
+/* Стили для сетки */
+
+html,
+body {
+    min-height: 2476px;
+    min-width: 1440px;
+}
+
+
