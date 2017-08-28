@@ -332,8 +332,8 @@ a {
 /* СТИЛИЗАЦИЯ СТРАНИЦЫ CATALOG */
 
 .site-navigation-current {
-    text-decoration: underline;
-    text-decoration-color: #fb565a;
+    display: inline-block;
+    border-bottom: 2px solid #fb565a;
 }
 
 .container-heading {
@@ -431,24 +431,6 @@ a {
     list-style: none;
 }
 
-.item-shape {
-    width: 360px;
-    height: 576px;
-    background-image: url(sedona.jpg);
-    background-repeat: no-repeat;
-}
-
-.item-info {
-    top: 345px;
-    height: 231px;
-    background-color: #eeeeee;
-    display: none;
-}
-
-.item-shape:hover .item-info{
-    display: block;
-}
-
 .item-title {
     font-size: 18px;
     font-weight: 700;
@@ -511,11 +493,23 @@ a {
 }
 
 /* Стили для сетки */
-
+/*
 html,
 body {
     min-height: 2476px;
     min-width: 1440px;
 }
+
+header {
+    width: 1440px;
+    min-height: 115px;
+}
+
+.main-navigation {
+    display: flex;
+    min-width: 1440px;
+    min-height: 115px;
+}
+*/
 
 
