@@ -19,7 +19,7 @@ a {
     clip: rect(0 0 0 0); 
     height: 1px; 
     width: 1px; 
-    margin: -1px; 
+    margin: 0; 
     padding: 0; 
     border: 0; 
 }
@@ -28,7 +28,7 @@ a {
 
 /* Стилизация меню */
 
-.main-navigation {
+.main-header {
     background-color: #eeeeee;
 }
 
@@ -215,6 +215,7 @@ a {
     line-height: 30px;
     text-transform: uppercase;
     color: #000000;
+    margin: 0;
 }
 
 .contacts-adress,
@@ -316,14 +317,14 @@ a {
     list-style: none;
 }
 
-.promo-1 {
+.promo-advice {
     font-size: 36px;
     font-weight: 700;
     line-height: 36px;
     color: #000000;
 }
 
-.promo-2 {
+.promo-discount {
     line-height: 22px;
     color: #444444;
 }
@@ -492,24 +493,238 @@ a {
     background-color: #d5d5d5;
 }
 
-/* Стили для сетки */
-/*
-html,
-body {
-    min-height: 2476px;
-    min-width: 1440px;
-}
+/* СЕТКИ */
 
-header {
-    width: 1440px;
-    min-height: 115px;
+/* Сетка страницы INDEX */
+
+/* Сетка хедера */
+
+.header-wrapper {
+    outline: 3px solid black;
 }
 
 .main-navigation {
     display: flex;
-    min-width: 1440px;
-    min-height: 115px;
+    width: 1160px;
+    margin: 0 20px;
+    outline: 3px dotted orange;
+    justify-content: space-between;
 }
-*/
+
+.main-header-logo {
+    outline: 1px solid blue;
+    width: 260px;
+}
+
+.site-navigation {
+    outline: 1px solid blue;
+    margin: 0;
+    padding: 0;
+    width: 660px;
+}
+
+.site-navigation-basket {
+    outline: 1px solid blue;
+    width: 200px;
+}
+
+.slide-1 {
+    outline: 3px solid black;
+}
+
+.promo {
+    width: 1160px;
+    margin: 0 20px;
+    outline: 1px solid blue;
+}
+
+/* Сетка раздела услуг */
+
+.main-container {
+
+}
+
+.services-wrapper {
+    outline: 3px dotted orange;
+}
+
+.services {
+    margin: 0 20px;
+    outline: 2px solid green;
+}
+
+.services-list {
+    display: flex; 
+    flex: wrap;
+    width: 1160px;
+    margin: 0;
+    padding: 0;
+}
+
+.services-item {
+    width: 360px;
+    margin-right: 40px;
+    outline: 1px solid blue;
+}
+
+.services-item:nth-child(3n) {
+    margin-right: 0;
+    outline: 1px solid blue;
+}
+
+/* Сетка раздела информации */
+
+.info-wrapper {
+    outline: 3px dotted orange;
+}
+
+.info {
+    display: flex;
+    width: 1160px;
+    margin: 0 20px;
+    outline: 2px solid green;
+}
+
+.about {
+    width: 700px;
+    margin-right: 60px;
+    outline: 1px solid blue;
+}
+
+.stats {
+    width: 400px;
+    outline: 1px solid blue;
+}
+
+/* Сетка раздела клиентов */
+
+.clients-wrapper {
+    outline: 3px dotted orange;
+}
+
+.clients {
+    width: 1160px;
+    margin: 0 20px;
+    outline: 2px solid green;
+}
+
+.clients-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.clients-item {
+    outline: 1px solid blue;
+}
+
+/* Сетка футера */
+
+.footer-map {
+    background-color: gray;
+}
+
+.footer-wrapper {
+    outline: 3px dotted orange;
+}
+
+.footer-last {
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+    margin: 0 20px;
+    outline: 2px solid green;
+}
+
+.footer-social {
+    margin: 0;
+    padding: 0;
+    width: 360px;
+    outline: 1px solid blue;
+}
+
+.footer-promo {
+    width: 760px;
+    outline: 1px solid blue;
+}
+
+/* Сетка страницы CATALOG */
+
+.container-heading {
+    outline: 1px solid blue;
+    width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-wrapper {
+    outline: 4px dotted orange;
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+    margin: 60px 20px;
+}
+
+.filters {
+    outline: 3px solid grey;
+    width: 300px;
+}
+
+.catalog {
+    outline: 3px solid grey;
+    width: 800px;
+}
+
+.sorting {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    width: 760px;
+    outline: 2px solid green;
+}
+
+.sorting p {
+    outline: 1px solid blue;
+    width: 260px;
+    margin: 0;
+}
+
+.sorting ul {
+    outline: 1px solid blue;
+    width: 460px;
+    margin: 0;
+    padding: 0;
+}
+
+.catalog-wrapper {
+    margin-left: 40px;
+    width: 760px;
+    outline: 3px dotted orange;
+}
+
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 760px;
+    margin: 0;
+    padding: 0;
+}
+
+.catalog-item {
+    outline: 1px solid blue;
+    width: 360px;
+    margin-bottom: 33px;
+}
+
+.pagination-list {
+    outline: 1px solid blue;
+    width: 500px;
+    margin: 0;
+    padding: 0;
+    margin-left: 40px;
+    margin-top: 60px;
+}
 
 
