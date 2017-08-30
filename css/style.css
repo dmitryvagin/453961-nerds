@@ -537,6 +537,7 @@ a {
 
 .services-list {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -581,7 +582,7 @@ a {
 
 .clients-list {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -590,6 +591,11 @@ a {
 
 .clients-item {
     width: 260px;
+    margin-right: 40px;
+}
+
+.clients-item:nth-child(4n) {
+    margin-right: 0;
 }
 
 /* Сетка футера */
@@ -643,7 +649,6 @@ a {
 
 .catalog {
     width: 760px;
-    min-height: 1918px;
 }
 
 .sorting {
@@ -660,7 +665,7 @@ a {
 .sorting-list {
     margin: 0;
     padding: 0;
-    width: 380px;
+    width: 360px;
 }
 
 .catalog-list {
