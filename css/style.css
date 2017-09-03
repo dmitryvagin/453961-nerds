@@ -46,6 +46,7 @@ input[type="radio"].visually-hidden {
 .main-header {
     background-color: #eeeeee;
     margin-bottom: 80px;
+    padding-top: 50px;
 }
 
 .main-navigation {
@@ -56,6 +57,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     list-style: none;
     width: 640px;
@@ -74,7 +76,7 @@ input[type="radio"].visually-hidden {
     line-height: 24px;
     text-transform: uppercase;
     color: #000000;
-    padding: 75px 35px 10px 15px;
+    padding: 28px 42px 10px 5px;
 }
 
 .site-navigation-basket {
@@ -96,7 +98,7 @@ input[type="radio"].visually-hidden {
     content: "";
     width: 16px;
     height: 18px;
-    top: 82px;
+    top: 32px;
     left: 85px;
     background-image: url(SVG/cart-icon.svg);
     background-repeat: no-repeat;
@@ -105,7 +107,7 @@ input[type="radio"].visually-hidden {
 
 .main-header-logo {
     display: block;
-    padding: 50px 40px 0 0;
+    padding: 0px 40px 0 0;
 }
 
 .main-header-logo:hover {
@@ -130,7 +132,7 @@ input[type="radio"].visually-hidden {
 
 .slider {
     position: relative;
-    height: 432px;
+    height: 424px;
     width: 1160px;
     background-color: #eeeeee;
 }
@@ -154,19 +156,19 @@ input[type="radio"].visually-hidden {
 .slide:nth-child(1) {
     background-image: url(PNG/slide1.png);
     background-repeat: no-repeat;
-    background-position: 430px 20px;
+    background-position: 430px 10px;
 }
 
 .slide:nth-child(2) {
     background-image: url(PNG/slide2.png);
     background-repeat: no-repeat;
-    background-position: 495px 0;
+    background-position: 495px 0px;
 }
 
 .slide:nth-child(3) {
     background-image: url(PNG/slide3.png);
     background-repeat: no-repeat;
-    background-position: 400px 20px;
+    background-position: 400px 15px;
 }
 
 .promo-content {
@@ -179,11 +181,11 @@ input[type="radio"].visually-hidden {
     font-weight: 500;
     line-height: 55px;
     color: #000000;
-    margin: 85px 0 0 0;
+    margin: 71px 0 0 0;
 }
 
 .promo-content p:nth-child(2){
-    margin: 40px 0 0 0;
+    margin: 26px 0 0 0;
 }
 
 .slide-button {
@@ -196,7 +198,7 @@ input[type="radio"].visually-hidden {
     display: block;
     width: 240px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 38px;
     padding: 16px 0;
     border-radius: 2px;
 }
@@ -216,7 +218,7 @@ input[type="radio"].visually-hidden {
     text-align: center;
     width: 240px;
     height: 18px;
-    bottom: 100px;
+    bottom: 95px;
     left: 50%;
     margin-left: -120px;
     z-index: 100;
@@ -270,14 +272,11 @@ input[type="radio"].visually-hidden {
 .services-item {
     width: 300px;
     margin-right: 100px;
+    margin-bottom: 65px;
 }
 
 .services-item:nth-child(3n) {
     margin-right: 0;
-}
-
-.services {
-    margin-bottom: 80px;
 }
 
 .services-name {
@@ -286,18 +285,18 @@ input[type="radio"].visually-hidden {
     line-height: 30px;
     text-transform: uppercase;
     color: #000000;
-    margin: 28px 0 0 0;
+    margin: 20px 0 0 0;
 }
 
 .services-description {
-    margin: 20px 0 0 0;
+    margin: 15px 0 0 0;
 }
 
 .services-button {
     display: block;
     width: 160px;
     text-align: center;
-    margin-top: 35px;
+    margin-top: 30px;
     padding: 16px 0;
     border-radius: 2px;
     line-height: 18px;
@@ -353,8 +352,8 @@ input[type="radio"].visually-hidden {
 .info-columns {
     display: flex;
     justify-content: space-between;
-    padding-top: 78px;
-    margin-bottom: 80px;
+    padding-top: 35px;
+    margin-bottom: 37px;
 }
 
 .about {
@@ -370,7 +369,7 @@ input[type="radio"].visually-hidden {
     font-weight: 500;
     line-height: 45px;
     color: #000000;
-    margin: 45px 0 0 0;
+    margin: 32px 0 0 0;
 }
 
 .about-description {
@@ -378,14 +377,15 @@ input[type="radio"].visually-hidden {
 }
 
 .about h3 {
-    margin: 45px 0 0 0;
+    margin: 40px 0 0 0;
+    font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
     color: #000000;
 }
 
 .about-list {
-    margin: 25px 0 0 0;
+    margin: 23px 0 0 0;
     padding: 0;
     list-style: none;
 }
@@ -415,24 +415,38 @@ input[type="radio"].visually-hidden {
 }
 
 .stats h3 {
-    margin: 45px 0 0 0;
+    margin: 28px 0 0 0;
+    font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
     color: #000000;
 }
 
-/*
-.stats-table {
-    margin: 44px 0 0 0;
-    padding-left: 0px;
-    border-spacing: 27px;
+.stats h3 {
+    padding-left: 55px;
 }
-*/
+
+.stats-table {
+    margin: 37px 0 0 18px;
+    border-spacing: 22px;
+}
+
+.stats-table td {
+    padding-top: 15px;
+}
+
 .table-percent td {
     font-size: 45px;
     font-weight: 700;
     line-height: 10px;
     color: #000000;
+    padding: 0;
+    margin: 0;
+}
+
+.stats-table sup {
+    font-size: 26px;
+    font-weight: 500;
 }
 
 .table-description td {
@@ -443,7 +457,6 @@ input[type="radio"].visually-hidden {
 
 .clients {
     padding-top: 43px;
-    margin-bottom: 43px;
 }
 
 .clients-list {
@@ -456,13 +469,28 @@ input[type="radio"].visually-hidden {
 }
 
 .clients-item a {
+    position: relative;
     display: block;
     text-align: center;
+}
+
+.clients-item a::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 52px;
+    background-color: red;
+    right: 0px;
+}
+
+.clients-item:nth-child(4n) a::after {
+    display: none;
 }
 
 .clients-item {
     width: 260px;
     margin-right: 40px;
+    margin-bottom: 18px;
 }
 
 .clients-item:nth-child(4n) {
@@ -484,19 +512,34 @@ input[type="radio"].visually-hidden {
 /* Стилизация контактов */
 
 .main-footer {
-    padding-top: 80px;
+    padding-top: 73px;
 }
 
 .footer-map {
-    height: 416px;
+    position: relative;
+    height: 362px;
+    background-image: url(PNG/map.png);
+    background-repeat: no-repeat;
+    background-position: -117px 50%;
     background-color: grey;
     padding-top: 54px;
 }
 
+.footer-map::after {
+    position: absolute;
+    content: "";
+    width: 155px;
+    height: 190px;
+    background-image: url(PNG/map-marker.png);
+    background-repeat: no-repeat;
+    left: 703px;
+    top: 89px;
+}
+
 .contacts {
     width: 320px;
-    padding: 50px 0;
-    margin-left: 20px;
+    padding: 50px 0 45px 0;
+    margin-left: 22px;
     background-color: #ffffff;
 }
 
@@ -506,13 +549,13 @@ input[type="radio"].visually-hidden {
     line-height: 30px;
     text-transform: uppercase;
     color: #000000;
-    margin: 0 0 28px 50px;
+    margin: 0 0 23px 50px;
 }
 
 .contacts-adress {
     line-height: 18px;
     color: #666666;
-    margin: 0 0 20px 50px;
+    margin: 0 0 18px 50px;
 }
 
 .contacts-telephone {
@@ -659,7 +702,7 @@ input[type="radio"].visually-hidden {
     font-weight: 700;
     line-height: 36px;
     color: #000000;
-    margin: 10px 0 0 0;
+    margin: 5px 0 0 0;
 }
 
 .promo-discount {
@@ -685,9 +728,23 @@ input[type="radio"].visually-hidden {
 
 /* СТИЛИЗАЦИЯ СТРАНИЦЫ CATALOG */
 
+.inner-page .main-header {
+    margin-bottom: 55px;
+}
+
 .site-navigation-current {
-    display: inline-block;
-    border-bottom: 2px solid #fb565a;
+    position: relative;
+    display: block;
+}
+
+.site-navigation-current::after {
+    content: "";
+    position: absolute;
+    width: 74px;
+    height: 2px;
+    background-color: #fb565a;
+    bottom: 2px;
+    left: 5px;
 }
 
 .main-heading {
@@ -697,8 +754,8 @@ input[type="radio"].visually-hidden {
     color: #000000;
     background-color: #eeeeee;
     text-align: center;
-    padding-top: 85px;
-    padding-bottom: 115px;
+    padding-top: 70px;
+    padding-bottom: 108px;
 }
 
 /* Стилизация раздела фильтров */
@@ -709,10 +766,92 @@ input[type="radio"].visually-hidden {
 
 .filters fieldset {
     border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.range-filter {
+    margin-top: 48px;
+    width: 260px;
+}
+
+.range-controls {
+    position: relative;
+    height: 80px;
+    margin-bottom: 15px;
+    padding: 0 20px;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.range-filter .scale {
+    margin-top: 39px;
+    height: 2px;
+    background-color: #d7dcde;
+}
+
+.range-controls .bar {
+    width: 70%;
+    height: 2px;
+    background-color: #00ca74;
+}
+
+.range-controls .inner-toggle {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 4px;
+    height: 4px;
+    border: 8px solid #ffffff;
+    background-color: #ababab;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 2px 1px 0 #cfcfcf;
+}
+
+.price-controls {
+    font-size: 0;
+}
+
+.price-controls label {
+    display: inline-block;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: #283136;
+    text-transform: uppercase;
+    font-size: 16px;
+    width: 50%;
+}
+
+.price-controls input {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: #283136;
+    text-transform: uppercase;
+    text-align: center;
+    width: 60px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    background: #f1f1f1;
+    margin-left: 10px;
+}
+
+.max-price {
+    text-align: right;
+}
+
+.range-controls .toggle-max {
+    left: 155px;
 }
 
 .filters ul {
     list-style: none;
+    margin-top: 30px;
+    padding: 0;
+}
+
+.filters li {
+    margin-top: 15px;
 }
 
 .filters legend {
@@ -742,6 +881,12 @@ input[type="radio"].visually-hidden {
     color: #000000;
     background-color: #eeeeee;
     border: none;
+    display: block;
+    width: 260px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 16px 0;
+    border-radius: 2px;
 }
 
 .filter-submit:hover {
@@ -754,11 +899,14 @@ input[type="radio"].visually-hidden {
     box-shadow: inset 0 3px 0 0 rgba(0,1,1,0.1);
 }
 
+
+
 /* Стилизация раздела сортировки */
 
 .sorting {
     display: flex;
     justify-content: space-between;
+    padding-top: 5px;
 }
 
 .sorting p {
@@ -766,23 +914,36 @@ input[type="radio"].visually-hidden {
     font-weight: 700;
     line-height: 18px;
     color: #000000;
+    text-transform: uppercase;
     margin: 0;
     padding: 0;
     width: 160px;
 }
 
 .sorting-list {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
     width: 360px;
 }
 
-.sorting-item a {
+.sorting-list a {
+    display: block;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
     color: rgba(0,0,0,0.3);
+    padding-right: 25px;
+}
+
+.sorting-by-name a::after {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 10px;
+    background: url(SVG/icon-down-dir.svg);
 }
 
 .sorting-item a:hover {
@@ -814,7 +975,7 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0;
-    padding: 0;
+    padding: 55px 0 0 0;
     margin-bottom: 60px;
 }
 
@@ -858,17 +1019,37 @@ input[type="radio"].visually-hidden {
 /* Стилизация переключателя страниц */
 
 .pagination-list {
+    display: flex;
+    width: 443px;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 .pagination-item a {
+    display: block;
+    text-align: center;
+    padding: 18px 0;
     font-weight: 500;
     line-height: 18px;
     text-transform: uppercase;
-    color: #000000;
     background-color: #eeeeee;
+    color: #000000;
+    width: 50px;
+    margin-right: 11px;
+}
+
+.pagination-item-current a {
+    width: 44px;
+    padding: 15px 0;
+    background-color: #eeeeee;
+    border: 3px solid #dbdbdb;
+    border-radius: 5px;
+}
+
+.word a {
+    width: 260px;
+    padding-right: 0;
 }
 
 .pagination-item-current a {
